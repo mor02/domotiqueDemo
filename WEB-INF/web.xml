@@ -1,0 +1,47 @@
+<web-app>
+
+	<servlet>
+		<servlet-class>com.servlet.test.Dolt</servlet-class>
+		<servlet-name>firstServlet</servlet-name>
+	</servlet>
+	
+	<servlet>
+		<servlet-class>com.servlet.test.Invoke</servlet-class>
+		<servlet-name>Invoke</servlet-name>
+	</servlet>
+	
+	<servlet>
+		<servlet-class>com.servlet.test.ColorServlet</servlet-class>
+		<servlet-name>color</servlet-name>
+	</servlet>
+	
+	<servlet>
+		<servlet-class>com.servlet.test.Formulaire1</servlet-class>
+		<servlet-name>FirstForm</servlet-name>
+	</servlet>
+	
+	<servlet>
+		<servlet-class>com.servlet.test.FormulaireAction</servlet-class>
+		<servlet-name>FormAction</servlet-name>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>Invoke</servlet-name>
+		<url-pattern>/Invoke</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>color</servlet-name>
+		<url-pattern>/color</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>FirstForm</servlet-name>
+		<url-pattern>/form</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>FormAction</servlet-name>
+		<url-pattern>*.do</url-pattern>
+	</servlet-mapping>
+</web-app>
